@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('Sample.jpg')
+img = cv2.imread('SlavaIsNotSexEnough/pic.jpg')
 
 # gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # heatmap_img = cv2.applyColorMap(gray_img, cv2.COLORMAP_JET)
