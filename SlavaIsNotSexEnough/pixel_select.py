@@ -27,7 +27,7 @@ list_of_test_pixels = list(test_pixels)
 # Считаем...
 percent_of_warm_pixels = 0
 for pixel in list_of_test_pixels: # [::100]
-    if pixel in list_of_warm_pixels:
+    if pixel[0] > pixel[2]:
         percent_of_warm_pixels = percent_of_warm_pixels + 1
 
 print("Теплых пикселей: "+ str(percent_of_warm_pixels))
