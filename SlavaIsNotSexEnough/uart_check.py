@@ -1,7 +1,7 @@
 '''
 UART communication on Raspberry Pi using Python
 Крч, я в будущем, слушай внимательно
-В raspi-config на врубить serial 
+В raspi-config надо врубить serial 
 Так что не забудь
 Peace
 '''
