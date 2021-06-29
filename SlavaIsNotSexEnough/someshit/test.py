@@ -1,8 +1,8 @@
-import cv2
 
-img = cv2.imread('SlavaIsNotSexEnough/pic.jpg')
-gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-heatmap_img = cv2.applyColorMap(gray_img, cv2.COLORMAP_AUTUMN)
-fin = cv2.addWeighted(heatmap_img, 0.7, img, 0.3, 0) 
-cv2.imshow('oijd', fin)
-cv2.waitKey(0)
+print(b'"\x94[\xeb\xdaI\x12\x96Y\xf0\x85\x9au\x86\x9c\x88c"'.decode('Windows-1252'))
+print(b'\x96I\x12\x96I\x12\x96I\xdb\x96["k\xdb\xe3\x06M\xdb'.decode('Windows-1252'))
+print(b'P!B\x82\xb4I\x84\x01\x94%\x82I\x12\x96I\x12\x96['.decode('Windows-1252'))
+print(b'\xeb\xdaI\xdb\xd4["k\xdb\xc3\x85\x97\x12g8\nd\x84'.decode('Windows-1252'))
+print(b'S"\x95U\xa1\x82Q\xeb\x9ae\x82SuEK\xa0\x89\xcfc'.decode('Windows-1252'))
+print(b'\x02I\xcaX\x91\x95K\xa0\xc9\xcf\x93\x14\x12\x96IdKWX'.decode('Windows-1252'))
+print(b'\xc0'.decode('Windows-1252'))
