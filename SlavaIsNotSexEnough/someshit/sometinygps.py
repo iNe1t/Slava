@@ -1,3 +1,7 @@
+#git clone https://github.com/inmcm/micropyGPS.git
+#python setup.py install
+# Установка
+
 from micropyGPS import MicropyGPS
 
 my_gps = MicropyGPS()
