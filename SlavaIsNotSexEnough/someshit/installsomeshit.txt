@@ -1,0 +1,24 @@
+Открываем файл для редакта
+sudo nano /etc/inittab
+Удаляем или комментим такую строку (?)
+T0:23:respawn:/sbin/getty -L ttyS0 115200 vt100
+Редактируем файл 
+sudo nano /boot/cmdline.txt
+Файл должен выглядеть вот так
+dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait
+Перезагружаемся
+Устанавливаем все нужное
+sudo apt-get update
+sudo apt-get install minicom gpsd gpsd-clients
+Проверяем на наличие ошибок
+stty -F /dev/ttyS0 9600
+Если нету то все хорошо
+Первый тест
+stty -F /dev/ttyS0 9600
+Конфигурация
+stty -F /dev/ttyAMA0
+
+sudo gpsd /dev/ttyAMA0 -F /var/run/gpsd.sock -n
+cgps -s
+Чтение необработанных данных
+sudo cat /dev/serial0
